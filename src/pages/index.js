@@ -5,7 +5,13 @@ import { useEffect } from 'react'
 
 export async function getServerSideProps()
 {
-  // The server side code
+  const { data } = await axios.get('https://api.rwnjs.com/04/users')
+
+  return {
+    props: {
+      users: data
+    }
+  }
 }
 
 export default function Home({ users })
