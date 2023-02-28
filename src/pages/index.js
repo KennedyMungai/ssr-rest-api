@@ -1,4 +1,5 @@
 import styles from '@/styles/Home.module.css'
+import axios from 'axios'
 import Link from 'next/link'
 import { useEffect } from 'react'
 
